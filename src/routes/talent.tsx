@@ -38,7 +38,7 @@ function TalentPage() {
   );
 
   const run = async () => {
-    if (!company) return toast.error("Choose a company first");
+    if (!company) { toast.error("Choose a company first"); return; }
     setRunning(true);
     try {
       const { data, error } = await supabase.from("company_skillsets").select("category_code, required_level").eq("company", company);
@@ -46,7 +46,7 @@ function TalentPage() {
       const req = Object.fromEntries(data.map((d) => [d.category_code, d.required_level])) as Partial<Record<CategoryCode, number>>;
       const r = runTalentCheck(profile.skills, company, req);
       setTalent(r);
-      const { data: tr, error: e2 } = await supabase.from("talent_results").insert({ candidate_id: profile.id, company, readiness_score: r.readiness_score }).select("id").single();
+      const { data: tr, error: e2 } = await supabase.from("talent_results").insert({ candidate_id: profile.id ?? null, company, readiness_score: r.readiness_score }).select("id").single();
       if (e2) throw e2;
       const { error: e3 } = await supabase.from("talent_result_gaps").insert(r.skillset_gap.map((g) => ({ ...g, talent_result_id: tr.id })));
       if (e3) throw e3;

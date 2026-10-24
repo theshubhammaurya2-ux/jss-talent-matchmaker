@@ -28,7 +28,7 @@ function MatchPage() {
     try {
       const r = await matchSkills(profile.skills, jd);
       setMatch(r);
-      const { error } = await supabase.from("match_results").insert({ candidate_id: profile.id, jd_id: jd.id ?? null, ...r });
+      const { error } = await supabase.from("match_results").insert({ candidate_id: profile.id ?? null, jd_id: jd.id ?? null, ...r });
       if (error) throw error;
       toast.success("Skill match saved");
     } catch {

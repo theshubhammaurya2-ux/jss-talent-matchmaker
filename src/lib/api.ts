@@ -2,7 +2,7 @@
 // Each function currently returns MOCK data after 1s; swap the body for the real fetch later.
 import type { MatchResult, ParsedResume, Skill, SkillList } from "@/types";
 
-export const API_URL = import.meta.env.VITE_API_URL ?? "http://localhost:8000";
+export const API_URL = import.meta.env["VITE_API_URL"] ?? "http://localhost:8000";
 const delay = (ms = 1000) => new Promise((r) => setTimeout(r, ms));
 const hash = (s: string) => [...s].reduce((a, c) => (a * 31 + c.charCodeAt(0)) >>> 0, 7);
 
@@ -103,14 +103,14 @@ const RESUME_PRESETS: Persona[] = [
 export async function parseJD(file: File): Promise<SkillList> {
   // Real: const fd = new FormData(); fd.append("file", file); return (await fetch(`${API_URL}/parse-jd`, { method: "POST", body: fd })).json();
   await delay();
-  const p = JD_PRESETS[hash(file.name) % JD_PRESETS.length];
+  const p = JD_PRESETS[hash(file.name) % JD_PRESETS.length]!;
   return { ...p, skills: p.skills.map((s) => ({ ...s })), source_type: "jd", source_file: file.name };
 }
 
 export async function parseResume(file: File): Promise<ParsedResume> {
   // Real: POST `${API_URL}/parse-resume` with FormData
   await delay();
-  const p = RESUME_PRESETS[hash(file.name) % RESUME_PRESETS.length];
+  const p = RESUME_PRESETS[hash(file.name) % RESUME_PRESETS.length]!;
   return { ...structuredClone(p), source_type: "resume", source_file: file.name, company: "", role: "" };
 }
 

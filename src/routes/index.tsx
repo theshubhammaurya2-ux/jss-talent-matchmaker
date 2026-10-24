@@ -47,7 +47,7 @@ function JdPage() {
   const pick = async (id: string) => {
     const meta = saved.find((s) => s.id === id);
     const { data, error } = await supabase.from("jd_skills").select("*").eq("jd_id", id);
-    if (error || !meta) return toast.error("Couldn't load JD");
+    if (error || !meta) { toast.error("Couldn't load JD"); return; }
     const list: SkillList = {
       id, source_type: "jd", source_file: meta.source_file, company: meta.company ?? "", role: meta.role ?? "",
       skills: data.map((s) => ({ skill_name: s.skill_name, category_code: s.category_code as CategoryCode, evidence: s.evidence ?? "", confidence: s.confidence as Confidence })),
@@ -59,7 +59,7 @@ function JdPage() {
 
   const useThis = async () => {
     if (!draft) return;
-    if (draft.id) { setJd(draft); return toast.success("JD selected"); }
+    if (draft.id) { setJd(draft); { toast.success("JD selected"); return; } }
     setSaving(true);
     try {
       const { data, error } = await supabase.from("job_descriptions").insert({ source_file: draft.source_file, company: draft.company, role: draft.role }).select("id").single();
@@ -90,7 +90,7 @@ function JdPage() {
       <div className="grid gap-6 lg:grid-cols-3">
         <div className="lg:col-span-2"><Dropzone onFile={onFile} loading={loading} label="Upload job description" /></div>
         <Panel title="Saved JDs">
-          <Select onValueChange={pick} value={draft?.id}>
+          <Select onValueChange={pick} value={draft?.id ?? ""}>
             <SelectTrigger><SelectValue placeholder={saved.length ? "Pick a saved JD" : "No saved JDs yet"} /></SelectTrigger>
             <SelectContent>
               {saved.map((s) => <SelectItem key={s.id} value={s.id}>{s.company} · {s.role} ({s.source_file})</SelectItem>)}

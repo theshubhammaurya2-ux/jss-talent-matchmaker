@@ -45,11 +45,11 @@ function ProfilePage() {
       supabase.from("candidates").select("*").eq("id", id).single(),
       supabase.from("candidate_skills").select("*").eq("candidate_id", id),
     ]);
-    if (error || e2 || !c) return toast.error("Couldn't load candidate");
+    if (error || e2 || !c) { toast.error("Couldn't load candidate"); return; }
     const p: Profile = {
       id: c.id, name: c.name, email: c.email, education: c.education ?? "", cv_file: c.cv_file ?? "",
-      hackathons: (c.hackathons as Profile["hackathons"]) ?? [], internships: (c.internships as Profile["internships"]) ?? [],
-      certifications: (c.certifications as Profile["certifications"]) ?? [], preferred_roles: (c.preferred_roles as string[]) ?? [],
+      hackathons: (c.hackathons as unknown as Profile["hackathons"]) ?? [], internships: (c.internships as unknown as Profile["internships"]) ?? [],
+      certifications: (c.certifications as unknown as Profile["certifications"]) ?? [], preferred_roles: (c.preferred_roles as unknown as string[]) ?? [],
       skills: (sk ?? []).map((s) => ({ skill_name: s.skill_name, category_code: s.category_code as CategoryCode, evidence: s.evidence ?? "", confidence: s.confidence as Confidence })),
     };
     setForm(p);
@@ -62,7 +62,7 @@ function ProfilePage() {
     if (!form.name.trim()) e.name = "Name is required";
     if (!EMAIL_RE.test(form.email)) e.email = "Enter a valid email";
     setErrors(e);
-    if (Object.keys(e).length) return toast.error("Please fix the highlighted fields");
+    if (Object.keys(e).length) { toast.error("Please fix the highlighted fields"); return; }
     setSaving(true);
     try {
       const row = { name: form.name.trim(), email: form.email.trim(), education: form.education, cv_file: form.cv_file, hackathons: form.hackathons, internships: form.internships, certifications: form.certifications, preferred_roles: form.preferred_roles };
@@ -97,7 +97,7 @@ function ProfilePage() {
     <>
       <PageHeader step={3} title="Profile Builder" subtitle="Review and complete the candidate's profile, then save it for Talent Check and Skill Matching." />
       <Panel className="mb-6" title="Load existing candidate">
-        <Select onValueChange={load} value={form.id}>
+        <Select onValueChange={load} value={form.id ?? ""}>
           <SelectTrigger className="max-w-md"><SelectValue placeholder={candidates.length ? "Choose a candidate" : "No saved candidates yet"} /></SelectTrigger>
           <SelectContent>{candidates.map((c) => <SelectItem key={c.id} value={c.id}>{c.name} — {c.email}</SelectItem>)}</SelectContent>
         </Select>
@@ -169,7 +169,7 @@ function ProfilePage() {
   );
 }
 
-function Field({ label, error, children }: { label: string; error?: string; children: React.ReactNode }) {
+function Field({ label, error, children }: { label: string; error?: string | undefined; children: React.ReactNode }) {
   return (
     <div className="space-y-1.5">
       <Label>{label}</Label>
@@ -187,7 +187,7 @@ function Repeat<T extends Record<string, string>>({ title, items, fields, onChan
         {items.map((it, i) => (
           <div key={i} className="space-y-2 rounded-xl border p-3">
             {fields.map((f) => (
-              <Input key={f} placeholder={f[0].toUpperCase() + f.slice(1)} value={it[f]} onChange={(e) => onChange(items.map((x, j) => (j === i ? { ...x, [f]: e.target.value } : x)))} />
+              <Input key={f} placeholder={f.charAt(0).toUpperCase() + f.slice(1)} value={it[f]} onChange={(e) => onChange(items.map((x, j) => (j === i ? { ...x, [f]: e.target.value } : x)))} />
             ))}
             <Button variant="ghost" size="sm" className="text-destructive" onClick={() => onChange(items.filter((_, j) => j !== i))}><Trash2 /> Remove</Button>
           </div>

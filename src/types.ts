@@ -19,9 +19,9 @@ export interface SkillList {
   skills: Skill[];
 }
 
-export interface Hackathon { name: string; result: string }
-export interface Internship { company: string; role: string; duration: string }
-export interface Certification { name: string; issuer: string }
+export type Hackathon = { name: string; result: string }
+export type Internship = { company: string; role: string; duration: string }
+export type Certification = { name: string; issuer: string }
 
 export interface Profile {
   id?: string;
