@@ -1,0 +1,62 @@
+{
+  "source_type": "jd",
+  "source_file": "Google LLC - Data Scientist.pdf",
+  "company": "Google LLC",
+  "role": "Data Scientist",
+  "skills": [
+    {
+      "skill_name": "Experimentation and A/B Testing",
+      "category_code": "APTI",
+      "evidence": "Design and run experiments (A/B tests) and interpret their results rigorously",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "SQL Query Optimization and Schema Design",
+      "category_code": "SQL",
+      "evidence": "Write efficient, production-grade SQL against very large datasets, including schema design and query optimization",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Predictive Modeling and Statistical Judgment",
+      "category_code": "AI",
+      "evidence": "Build and evaluate predictive models, applying sound statistical judgment",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Cross-functional Collaboration",
+      "category_code": "COMM",
+      "evidence": "Partner with engineering and product teams to turn analysis into shipped features",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Stakeholder Communication",
+      "category_code": "COMM",
+      "evidence": "Present findings clearly to both technical and non-technical stakeholders",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Database Indexing and Complex Querying",
+      "category_code": "SQL",
+      "evidence": "Strong SQL skills — writing and optimizing complex queries, understanding indexing, and designing a schema for event or telemetry data",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Quantitative Reasoning and Probability",
+      "category_code": "APTI",
+      "evidence": "Solid quantitative and analytical reasoning — comfortable interpreting experiment results, probability, and metrics under ambiguity",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Machine Learning Fundamentals",
+      "category_code": "AI",
+      "evidence": "Foundational machine learning knowledge: bias-variance tradeoff, regression vs. classification, how gradient descent works, and how to recognize overfitting",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Data Analysis and Insight Generation",
+      "category_code": "OTHER",
+      "evidence": "Analyze massive datasets to extract insights, build predictive models, and support product and business decisions",
+      "confidence": "high"
+    }
+  ]
+}
