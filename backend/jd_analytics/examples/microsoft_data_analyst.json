@@ -1,0 +1,62 @@
+{
+  "source_type": "jd",
+  "source_file": "Microsoft - Data Analyst.docx",
+  "company": "Microsoft Corporation",
+  "role": "Data Analyst",
+  "skills": [
+    {
+      "skill_name": "SQL",
+      "category_code": "SQL",
+      "evidence": "Write and optimize SQL queries against large production datasets",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Database schema design",
+      "category_code": "SQL",
+      "evidence": "Design schemas for telemetry and usage data, and know when to normalize vs. denormalize",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Dashboard creation",
+      "category_code": "OTHER",
+      "evidence": "Build dashboards and reporting that stakeholders actually use",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Business-metric anomaly detection",
+      "category_code": "OTHER",
+      "evidence": "Detect and explain anomalies in usage or business metrics",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Stakeholder communication",
+      "category_code": "COMM",
+      "evidence": "Communicate insights clearly to non-technical stakeholders and defend your methodology",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Index-aware query optimization",
+      "category_code": "SQL",
+      "evidence": "Strong, practical SQL — from a simple monthly-active-user query to schema design and index-aware query optimization",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Quantitative reasoning",
+      "category_code": "APTI",
+      "evidence": "Solid quantitative reasoning — interpreting trends, sampling, probability, and reasoning with data tables under ambiguity",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Applied statistics",
+      "category_code": "APTI",
+      "evidence": "Basic applied statistics/ML literacy: regression vs. classification, what overfitting means, and how to sanity-check a model's output",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Machine learning literacy",
+      "category_code": "AI",
+      "evidence": "Basic applied statistics/ML literacy: regression vs. classification, what overfitting means, and how to sanity-check a model's output",
+      "confidence": "high"
+    }
+  ]
+}

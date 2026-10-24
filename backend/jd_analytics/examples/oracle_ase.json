@@ -1,0 +1,68 @@
+{
+  "source_type": "jd",
+  "source_file": "Oracle - Associate Software Engineer.pdf",
+  "company": "Oracle Financial Services Software Limited",
+  "role": "Associate Software Engineer",
+  "skills": [
+    {
+      "skill_name": "Programming Fundamentals",
+      "category_code": "COD",
+      "evidence": "Solid programming fundamentals — able to read and predict the output of code, and solve basic string/array manipulation problems confidently",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Relational Databases",
+      "category_code": "SQL",
+      "evidence": "interact directly with relational databases",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Unit Testing",
+      "category_code": "SWE",
+      "evidence": "Perform unit testing and collaborate closely with QA",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Agile Methodologies",
+      "category_code": "SWE",
+      "evidence": "Participate in Agile ceremonies and coordinate with product teams",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Technical Documentation",
+      "category_code": "OTHER",
+      "evidence": "Document your work clearly for future maintainers",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "SQL Knowledge",
+      "category_code": "SQL",
+      "evidence": "Practical SQL knowledge — correct SELECT/WHERE syntax, understanding of DELETE vs. TRUNCATE, and comfort writing simple queries against a relational schema",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Data Structures and Algorithms",
+      "category_code": "DSA",
+      "evidence": "Core data structures knowledge — arrays vs. linked lists, when to use a stack or a queue, and basic algorithmic problem-solving",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Object-Oriented Programming",
+      "category_code": "OOD",
+      "evidence": "Object-oriented programming fundamentals — inheritance, polymorphism, abstract classes vs. interfaces, explained with real examples",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Operating Systems Basics",
+      "category_code": "OS",
+      "evidence": "Operating systems basics — what a process is, fundamentals of multithreading and memory management",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Software Development Lifecycle",
+      "category_code": "SWE",
+      "evidence": "Awareness of the software development lifecycle and the difference between Agile and Waterfall",
+      "confidence": "high"
+    }
+  ]
+}
