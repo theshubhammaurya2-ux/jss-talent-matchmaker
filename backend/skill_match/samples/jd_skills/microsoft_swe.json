@@ -1,0 +1,86 @@
+{
+  "source_type": "jd",
+  "source_file": "Microsoft_-_Software_Engineer.pdf",
+  "company": "Microsoft Corporation",
+  "role": "Software Engineer",
+  "skills": [
+    {
+      "skill_name": "Data Structures and Algorithms",
+      "category_code": "DSA",
+      "evidence": "hash maps, trees, complexity analysis",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Coding Problem Solving",
+      "category_code": "COD",
+      "evidence": "pattern matching, interval problems",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Operating Systems",
+      "category_code": "OS",
+      "evidence": "process scheduling, virtual memory, concurrency",
+      "confidence": "medium"
+    },
+    {
+      "skill_name": "Networking",
+      "category_code": "NETW",
+      "evidence": "REST APIs, timeouts, request lifecycle",
+      "confidence": "medium"
+    },
+    {
+      "skill_name": "System Design",
+      "category_code": "SYSD",
+      "evidence": "cloud-based storage or notification service",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Scalability and Fault Tolerance",
+      "category_code": "SYSD",
+      "evidence": "reason about scalability and fault tolerance",
+      "confidence": "medium"
+    },
+    {
+      "skill_name": "Object-Oriented Design",
+      "category_code": "OOD",
+      "evidence": "OOD and SOLID principles",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "SOLID Principles",
+      "category_code": "OOD",
+      "evidence": "SOLID principles",
+      "confidence": "medium"
+    },
+    {
+      "skill_name": "Clean Code",
+      "category_code": "SWE",
+      "evidence": "clean code habits",
+      "confidence": "medium"
+    },
+    {
+      "skill_name": "Software Testing",
+      "category_code": "SWE",
+      "evidence": "a real testing strategy",
+      "confidence": "medium"
+    },
+    {
+      "skill_name": "Technical Debt",
+      "category_code": "SWE",
+      "evidence": "technical debt",
+      "confidence": "low"
+    },
+    {
+      "skill_name": "Communication",
+      "category_code": "COMM",
+      "evidence": "describe a hard problem you solved",
+      "confidence": "medium"
+    },
+    {
+      "skill_name": "Azure / Cloud Infrastructure",
+      "category_code": "CLOUD",
+      "evidence": "Nice to have",
+      "confidence": "low"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "name": "Priya Menon",
+  "email": "priya@example.com",
+  "education": "B.Tech IT, Class of 2026, CGPA 7.4/10",
+  "skills": [
+    {
+      "skill_name": "SQL (basic)",
+      "category_code": "SQL",
+      "evidence": "Technical Skills; MySQL backend in attendance tracker",
+      "confidence": "medium"
+    },
+    {
+      "skill_name": "MySQL",
+      "category_code": "SQL",
+      "evidence": "attendance tracker project",
+      "confidence": "medium"
+    },
+    {
+      "skill_name": "Java",
+      "category_code": "COD",
+      "evidence": "attendance tracker in Java",
+      "confidence": "medium"
+    },
+    {
+      "skill_name": "Linux basics",
+      "category_code": "OS",
+      "evidence": "Technical Skills",
+      "confidence": "medium"
+    },
+    {
+      "skill_name": "Networking fundamentals",
+      "category_code": "NETW",
+      "evidence": "Technical Skills; Cisco Networking Basics",
+      "confidence": "medium"
+    },
+    {
+      "skill_name": "Communication",
+      "category_code": "COMM",
+      "evidence": "Volunteer coordinator across teams; escalations at IT desk",
+      "confidence": "medium"
+    },
+    {
+      "skill_name": "Ticketing Tools",
+      "category_code": "OTHER",
+      "evidence": "helpdesk simulation, resolved tickets",
+      "confidence": "medium"
+    },
+    {
+      "skill_name": "Incident Troubleshooting",
+      "category_code": "OTHER",
+      "evidence": "IT support desk intern, first-level troubleshooting",
+      "confidence": "medium"
+    },
+    {
+      "skill_name": "MS Excel",
+      "category_code": "OTHER",
+      "evidence": "Technical Skills",
+      "confidence": "medium"
+    }
+  ],
+  "hackathons": [
+    "Participant (non-finalist), 12-hour campus hackathon"
+  ],
+  "internships": [
+    "Summer intern, IT support desk"
+  ],
+  "certifications": [
+    "Cisco Networking Basics (online course)"
+  ],
+  "preferred_roles": [
+    "Application Support Analyst",
+    "Associate Software Engineer"
+  ],
+  "cv_file": "Priya_Menon.pdf"
+}

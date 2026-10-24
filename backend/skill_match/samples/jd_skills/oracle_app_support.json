@@ -1,0 +1,50 @@
+{
+  "source_type": "jd",
+  "source_file": "Oracle_-_Application_Support_Analyst.pdf",
+  "company": "Oracle Financial Services Software Limited",
+  "role": "Application Support Analyst",
+  "skills": [
+    {
+      "skill_name": "SQL",
+      "category_code": "SQL",
+      "evidence": "basic SELECT/WHERE queries, primary keys",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Operating Systems and Linux",
+      "category_code": "OS",
+      "evidence": "command-line usage, log files, batch vs real-time",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Networking Basics",
+      "category_code": "NETW",
+      "evidence": "IP address, client-server, latency",
+      "confidence": "medium"
+    },
+    {
+      "skill_name": "Quantitative Reasoning",
+      "category_code": "APTI",
+      "evidence": "data interpretation, arithmetic",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Logical Reasoning",
+      "category_code": "APTI",
+      "evidence": "structured problem-solving",
+      "confidence": "medium"
+    },
+    {
+      "skill_name": "Communication",
+      "category_code": "COMM",
+      "evidence": "explain issue to non-technical client",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Incident / Ticketing Systems",
+      "category_code": "OTHER",
+      "evidence": "Nice to have",
+      "confidence": "low"
+    }
+  ]
+}

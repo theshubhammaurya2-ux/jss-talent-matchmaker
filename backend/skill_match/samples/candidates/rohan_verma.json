@@ -1,0 +1,128 @@
+{
+  "name": "Rohan Verma",
+  "email": "rohan@example.com",
+  "education": "B.Tech CSE, Class of 2026, CGPA 9.1/10",
+  "skills": [
+    {
+      "skill_name": "C++",
+      "category_code": "COD",
+      "evidence": "Technical Skills; 500+ problems solved",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Python",
+      "category_code": "COD",
+      "evidence": "Technical Skills",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Data Structures & Algorithms",
+      "category_code": "DSA",
+      "evidence": "Technical Skills; competitive programming",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Competitive Programming",
+      "category_code": "DSA",
+      "evidence": "500+ problems solved",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "SQL",
+      "category_code": "SQL",
+      "evidence": "Technical Skills",
+      "confidence": "medium"
+    },
+    {
+      "skill_name": "System Design",
+      "category_code": "SYSD",
+      "evidence": "Scalable notification service, pub-sub architecture",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Notification Service (pub-sub)",
+      "category_code": "SYSD",
+      "evidence": "horizontally-scalable workers",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Object-Oriented Design",
+      "category_code": "OOD",
+      "evidence": "Technical Skills; blog on OO design patterns",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Design Patterns",
+      "category_code": "OOD",
+      "evidence": "technical blog series",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Operating Systems",
+      "category_code": "OS",
+      "evidence": "Technical Skills",
+      "confidence": "medium"
+    },
+    {
+      "skill_name": "Machine Learning (basic)",
+      "category_code": "AI",
+      "evidence": "Technical Skills",
+      "confidence": "low"
+    },
+    {
+      "skill_name": "Collaborative Filtering",
+      "category_code": "AI",
+      "evidence": "recommendation engine, precision/recall",
+      "confidence": "medium"
+    },
+    {
+      "skill_name": "Git",
+      "category_code": "SWE",
+      "evidence": "Technical Skills",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "CI",
+      "category_code": "SWE",
+      "evidence": "shipped feature with tests and CI at internship",
+      "confidence": "medium"
+    },
+    {
+      "skill_name": "Testing",
+      "category_code": "SWE",
+      "evidence": "shipped feature end-to-end including tests",
+      "confidence": "medium"
+    },
+    {
+      "skill_name": "Open Source Contribution",
+      "category_code": "OTHER",
+      "evidence": "2 merged PRs",
+      "confidence": "medium"
+    },
+    {
+      "skill_name": "Docker",
+      "category_code": "CLOUD",
+      "evidence": "Technical Skills",
+      "confidence": "medium"
+    },
+    {
+      "skill_name": "Technical Writing",
+      "category_code": "COMM",
+      "evidence": "technical blog series",
+      "confidence": "medium"
+    }
+  ],
+  "hackathons": [
+    "Winner, national inter-college hackathon (real-time collaborative editor)"
+  ],
+  "internships": [
+    "Software Engineering intern, Series-B startup"
+  ],
+  "certifications": [],
+  "preferred_roles": [
+    "Software Engineer",
+    "Data Scientist",
+    "Backend Engineer"
+  ],
+  "cv_file": "Rohan_Verma.pdf"
+}
