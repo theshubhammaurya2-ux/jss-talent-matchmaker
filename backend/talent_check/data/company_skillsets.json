@@ -1,0 +1,95 @@
+[
+  {
+    "company": "Google LLC",
+    "required_levels": {
+      "COD": 9,
+      "DSA": 9,
+      "OOD": 7,
+      "APTI": 7,
+      "COMM": 6,
+      "AI": 4,
+      "CLOUD": 3,
+      "SQL": 4,
+      "SWE": 6,
+      "SYSD": 5,
+      "NETW": 5,
+      "OS": 6
+    },
+    "source_labels": {
+      "COD": "9-AP",
+      "DSA": "9-AS",
+      "OOD": "7-AS",
+      "APTI": "7-AP",
+      "COMM": "6-AP",
+      "AI": "4-CU",
+      "CLOUD": "3-CU",
+      "SQL": "4-CU",
+      "SWE": "6-AP",
+      "SYSD": "5-CU",
+      "NETW": "5-CU",
+      "OS": "6-CU"
+    }
+  },
+  {
+    "company": "Microsoft Corporation",
+    "required_levels": {
+      "COD": 6,
+      "DSA": 9,
+      "OOD": 8,
+      "APTI": 8,
+      "COMM": 7,
+      "AI": 8,
+      "CLOUD": 7,
+      "SQL": 8,
+      "SWE": 9,
+      "SYSD": 8,
+      "NETW": 8,
+      "OS": 8
+    },
+    "source_labels": {
+      "COD": "6-AS",
+      "DSA": "9-EV",
+      "OOD": "8-CR",
+      "APTI": "8-EV",
+      "COMM": "7-EV",
+      "AI": "8-EV",
+      "CLOUD": "7-EV",
+      "SQL": "8-AS",
+      "SWE": "9 - EV",
+      "SYSD": "8-CR",
+      "NETW": "8-EV",
+      "OS": "8-EV"
+    }
+  },
+  {
+    "company": "Oracle Financial Services Software Limited",
+    "required_levels": {
+      "COD": 5,
+      "DSA": 6,
+      "OOD": 6,
+      "APTI": 6,
+      "COMM": 6,
+      "AI": 6,
+      "CLOUD": 5,
+      "SQL": 6,
+      "SWE": 7,
+      "SYSD": 5,
+      "NETW": 5,
+      "OS": 5
+    },
+    "source_labels": {
+      "COD": "5-AP",
+      "DSA": "6-AP",
+      "OOD": "6-EV",
+      "APTI": "6-AP",
+      "COMM": "6-AS",
+      "AI": "6-AS",
+      "CLOUD": "5-AP",
+      "SQL": "6-AP",
+      "SWE": "7 - AS",
+      "SYSD": "5-CR",
+      "NETW": "5-AP",
+      "OS": "5-AP"
+    }
+  }
+]

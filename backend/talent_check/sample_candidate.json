@@ -1,0 +1,10 @@
+{
+  "name": "Demo Candidate",
+  "skills": [
+    {"skill_name": "Python", "category_code": "COD", "evidence": "Built a REST API", "confidence": "high"},
+    {"skill_name": "Arrays and algorithms", "category_code": "DSA", "evidence": "Solved coding problems", "confidence": "medium"},
+    {"skill_name": "SQL joins", "category_code": "SQL", "evidence": "Used joins in a project", "confidence": "medium"},
+    {"skill_name": "Communication", "category_code": "COMM", "evidence": "Presented a project", "confidence": "high"},
+    {"skill_name": "Cloud deployment", "category_code": "CLOUD", "evidence": "Deployed a demo app", "confidence": "low"}
+  ]
+}
