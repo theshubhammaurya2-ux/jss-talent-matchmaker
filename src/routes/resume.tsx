@@ -15,7 +15,7 @@ export const Route = createFileRoute("/resume")({
 });
 
 function ResumePage() {
-  const { resume, setResume } = useAppState();
+  const { resume, setResume, setProfile } = useAppState();
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
@@ -65,7 +65,36 @@ function ResumePage() {
               </ul>
             </Panel>
           </div>
-          <Panel title="Extracted skills" action={<Button onClick={() => navigate({ to: "/profile" })}>Send to Profile Builder</Button>}>
+          <Panel
+            title="Extracted skills"
+            action={
+              <Button
+                onClick={() => {
+                  if (!resume) return;
+
+                  setProfile({
+                    name: resume.name,
+                    email: resume.email || "",
+                    education: resume.education,
+                    skills: resume.skills.map((s) => ({ ...s })),
+                    hackathons: [],
+                    internships: resume.experience.map((e) => ({
+                      company: e.company,
+                      role: e.role,
+                      duration: e.duration,
+                    })),
+                    certifications: [],
+                    preferred_roles: [],
+                    cv_file: resume.source_file,
+                  });
+
+                  navigate({ to: "/profile" });
+                }}
+              >
+                Send to Profile Builder
+              </Button>
+            }
+          >
             <SkillTable skills={resume.skills} />
           </Panel>
         </div>

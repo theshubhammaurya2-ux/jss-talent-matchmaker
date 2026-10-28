@@ -96,7 +96,9 @@ function JdPage() {
               {saved.map((s) => <SelectItem key={s.id} value={s.id}>{s.company} · {s.role} ({s.source_file})</SelectItem>)}
             </SelectContent>
           </Select>
-          <p className="mt-3 text-xs text-muted-foreground">Tip: different file names produce different demo JDs (Google, TCS, Amazon).</p>
+          <p className="mt-3 text-xs text-muted-foreground">
+            Upload a JD PDF to analyze and save its required skills.
+          </p>
         </Panel>
       </div>
 

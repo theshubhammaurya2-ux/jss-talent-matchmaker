@@ -101,17 +101,68 @@ const RESUME_PRESETS: Persona[] = [
 ];
 
 export async function parseJD(file: File): Promise<SkillList> {
-  // Real: const fd = new FormData(); fd.append("file", file); return (await fetch(`${API_URL}/parse-jd`, { method: "POST", body: fd })).json();
-  await delay();
-  const p = JD_PRESETS[hash(file.name) % JD_PRESETS.length]!;
-  return { ...p, skills: p.skills.map((s) => ({ ...s })), source_type: "jd", source_file: file.name };
+  const formData = new FormData();
+  formData.append("file", file);
+
+  const response = await fetch(`${API_URL}/api/jd/analyze`, {
+    method: "POST",
+    body: formData,
+  });
+
+  if (!response.ok) {
+    throw new Error(`JD analysis failed: ${response.status}`);
+  }
+
+  return (await response.json()) as SkillList;
 }
 
+
 export async function parseResume(file: File): Promise<ParsedResume> {
-  // Real: POST `${API_URL}/parse-resume` with FormData
-  await delay();
-  const p = RESUME_PRESETS[hash(file.name) % RESUME_PRESETS.length]!;
-  return { ...structuredClone(p), source_type: "resume", source_file: file.name, company: "", role: "" };
+  const formData = new FormData();
+  formData.append("file", file);
+
+  const response = await fetch(
+    "http://127.0.0.1:8001/api/resume/analyze",
+    {
+      method: "POST",
+      body: formData,
+    }
+  );
+
+  if (!response.ok) {
+    throw new Error(`Resume parsing failed: ${response.status}`);
+  }
+
+  const data = await response.json();
+
+  return {
+    source_type: "resume",
+    source_file: data.source_file,
+    name: data.name,
+    email: "",
+    education: data.education.join("\n"),
+
+    projects: data.projects.map((p: string) => {
+      const [title, ...description] = p.split("|");
+      return {
+        title: (title ?? "").trim(),
+        description: description.join("|").trim(),
+      };
+    }),
+
+    experience: data.experience.map((e: string) => {
+      const [role, company, ...duration] = e.split("|");
+      return {
+        company: company?.trim() || "",
+        role: role?.trim() || "",
+        duration: duration.join("|").trim(),
+      };
+    }),
+
+    skills: data.skills,
+    company: "",
+    role: "",
+  };
 }
 
 export async function matchSkills(candidateSkills: Skill[], jdSkillList: SkillList): Promise<MatchResult> {

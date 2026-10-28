@@ -10,6 +10,7 @@ import { useAppState } from "@/lib/app-state";
 import { pageHead } from "@/lib/head";
 import { runTalentCheck } from "@/lib/talent";
 import { supabase } from "@/integrations/supabase/client";
+import companyData from "../data/staging_company_skill_levels_rows.json";
 import type { CategoryCode } from "@/types";
 
 export const Route = createFileRoute("/talent")({
@@ -24,10 +25,11 @@ function TalentPage() {
   const [running, setRunning] = useState(false);
 
   useEffect(() => {
-    supabase.from("company_skillsets").select("company").then(({ data, error }) => {
-      if (error) toast.error("Couldn't load companies");
-      else setCompanies([...new Set(data.map((d) => d.company))].sort());
-    });
+    const names = [...new Set(
+      companyData.map((item) => item.companies.trim())
+    )].sort();
+
+    setCompanies(names);
   }, []);
 
   if (!profile?.id) return (
@@ -41,9 +43,28 @@ function TalentPage() {
     if (!company) { toast.error("Choose a company first"); return; }
     setRunning(true);
     try {
-      const { data, error } = await supabase.from("company_skillsets").select("category_code, required_level").eq("company", company);
-      if (error) throw error;
-      const req = Object.fromEntries(data.map((d) => [d.category_code, d.required_level])) as Partial<Record<CategoryCode, number>>;
+      const selected = companyData.find(
+        (item) => item.companies.trim() === company
+      );
+
+      if (!selected) {
+        throw new Error("Company not found in JSON");
+      }
+
+      const req: Partial<Record<CategoryCode, number>> = {
+        COD: parseInt(selected.coding, 10),
+        DSA: parseInt(selected.data_structures_and_algorithms, 10),
+        OOD: parseInt(selected.object_oriented_programming_and_design, 10),
+        APTI: parseInt(selected.aptitude_and_problem_solving, 10),
+        COMM: parseInt(selected.communication_skills, 10),
+        AI: parseInt(selected.ai_native_engineering, 10),
+        CLOUD: parseInt(selected.devops_and_cloud, 10),
+        SQL: parseInt(selected.sql_and_design, 10),
+        SWE: parseInt(selected.software_engineering, 10),
+        SYSD: parseInt(selected.system_design_and_architecture, 10),
+        NETW: parseInt(selected.computer_networking, 10),
+        OS: parseInt(selected.operating_system, 10),
+      };
       const r = runTalentCheck(profile.skills, company, req);
       setTalent(r);
       const { data: tr, error: e2 } = await supabase.from("talent_results").insert({ candidate_id: profile.id ?? null, company, readiness_score: r.readiness_score }).select("id").single();

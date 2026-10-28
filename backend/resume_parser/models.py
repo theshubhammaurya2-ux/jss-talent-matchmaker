@@ -9,7 +9,7 @@ Confidence = Literal["high", "medium", "low"]
 
 class Skill(BaseModel):
     model_config = ConfigDict(extra="forbid")
-    skill_name: str = Field(min_length=2, max_length=120)
+    skill_name: str = Field(min_length=1, max_length=120)
     category_code: CategoryCode
     evidence: str = Field(min_length=3, max_length=500)
     confidence: Confidence
