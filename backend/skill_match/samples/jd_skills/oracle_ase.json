@@ -1,0 +1,68 @@
+{
+  "source_type": "jd",
+  "source_file": "Oracle_-_Associate_Software_Engineer.pdf",
+  "company": "Oracle Financial Services Software Limited",
+  "role": "Associate Software Engineer",
+  "skills": [
+    {
+      "skill_name": "Programming",
+      "category_code": "COD",
+      "evidence": "read and predict code output, string/array problems",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "SQL",
+      "category_code": "SQL",
+      "evidence": "SELECT/WHERE, DELETE vs TRUNCATE",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Data Structures",
+      "category_code": "DSA",
+      "evidence": "arrays vs linked lists, stack, queue",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Object-Oriented Programming",
+      "category_code": "OOD",
+      "evidence": "inheritance, polymorphism, abstract classes vs interfaces",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Operating Systems",
+      "category_code": "OS",
+      "evidence": "process, multithreading, memory management",
+      "confidence": "medium"
+    },
+    {
+      "skill_name": "Quantitative Aptitude",
+      "category_code": "APTI",
+      "evidence": "time-and-work, ratios, percentages",
+      "confidence": "medium"
+    },
+    {
+      "skill_name": "Logical Reasoning",
+      "category_code": "APTI",
+      "evidence": "seating-arrangement style reasoning",
+      "confidence": "medium"
+    },
+    {
+      "skill_name": "Communication",
+      "category_code": "COMM",
+      "evidence": "explain your final-year project",
+      "confidence": "medium"
+    },
+    {
+      "skill_name": "Software Development Lifecycle",
+      "category_code": "SWE",
+      "evidence": "SDLC, Agile vs Waterfall, documentation",
+      "confidence": "medium"
+    },
+    {
+      "skill_name": "Banking / Financial Domain",
+      "category_code": "OTHER",
+      "evidence": "Nice to have",
+      "confidence": "low"
+    }
+  ]
+}

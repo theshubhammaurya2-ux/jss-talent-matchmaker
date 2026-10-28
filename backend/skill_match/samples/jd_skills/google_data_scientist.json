@@ -1,0 +1,68 @@
+{
+  "source_type": "jd",
+  "source_file": "Google_LLC_-_Data_Scientist.pdf",
+  "company": "Google LLC",
+  "role": "Data Scientist",
+  "skills": [
+    {
+      "skill_name": "SQL",
+      "category_code": "SQL",
+      "evidence": "Strong SQL skills, complex queries",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Query Optimization and Indexing",
+      "category_code": "SQL",
+      "evidence": "understanding indexing",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Schema Design",
+      "category_code": "SQL",
+      "evidence": "designing a schema for event or telemetry data",
+      "confidence": "medium"
+    },
+    {
+      "skill_name": "Probability and Statistics",
+      "category_code": "APTI",
+      "evidence": "interpreting experiment results, probability",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "A/B Testing",
+      "category_code": "APTI",
+      "evidence": "design and run experiments",
+      "confidence": "medium"
+    },
+    {
+      "skill_name": "Machine Learning",
+      "category_code": "AI",
+      "evidence": "bias-variance, regression vs classification",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Gradient Descent",
+      "category_code": "AI",
+      "evidence": "how gradient descent works",
+      "confidence": "medium"
+    },
+    {
+      "skill_name": "Overfitting",
+      "category_code": "AI",
+      "evidence": "recognize overfitting",
+      "confidence": "medium"
+    },
+    {
+      "skill_name": "Communication",
+      "category_code": "COMM",
+      "evidence": "explain a complex model to a product manager",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "BI / Visualization Tools",
+      "category_code": "OTHER",
+      "evidence": "Nice to have",
+      "confidence": "low"
+    }
+  ]
+}

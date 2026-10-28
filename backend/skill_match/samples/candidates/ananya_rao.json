@@ -1,0 +1,109 @@
+{
+  "name": "Ananya Rao",
+  "email": "ananya@example.com",
+  "education": "B.Tech CSE, Class of 2026, CGPA 8.6/10",
+  "skills": [
+    {
+      "skill_name": "C++",
+      "category_code": "COD",
+      "evidence": "Technical Skills; multithreaded job scheduler",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Python",
+      "category_code": "COD",
+      "evidence": "Technical Skills",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Java",
+      "category_code": "COD",
+      "evidence": "parking-lot system in Java",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Data Structures & Algorithms",
+      "category_code": "DSA",
+      "evidence": "Technical Skills; 350+ problems solved",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Operating Systems",
+      "category_code": "OS",
+      "evidence": "Technical Skills; process scheduling simulation",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Multithreading",
+      "category_code": "OS",
+      "evidence": "multithreaded job scheduler in C++",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Linux",
+      "category_code": "OS",
+      "evidence": "Technical Skills",
+      "confidence": "medium"
+    },
+    {
+      "skill_name": "Computer Networks",
+      "category_code": "NETW",
+      "evidence": "Technical Skills",
+      "confidence": "medium"
+    },
+    {
+      "skill_name": "Object-Oriented Design",
+      "category_code": "OOD",
+      "evidence": "Technical Skills",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Design Patterns",
+      "category_code": "OOD",
+      "evidence": "Factory, Strategy in parking-lot system",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Distributed Systems",
+      "category_code": "SYSD",
+      "evidence": "distributed URL-shortening service",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "System Design",
+      "category_code": "SYSD",
+      "evidence": "URL shortener with Redis cache, scalable API layer",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Rate Limiter",
+      "category_code": "SYSD",
+      "evidence": "shipped rate-limiter in production at internship",
+      "confidence": "medium"
+    },
+    {
+      "skill_name": "Git",
+      "category_code": "SWE",
+      "evidence": "Technical Skills",
+      "confidence": "medium"
+    },
+    {
+      "skill_name": "Mentoring",
+      "category_code": "COMM",
+      "evidence": "mentors juniors on DSA",
+      "confidence": "medium"
+    }
+  ],
+  "hackathons": [
+    "Finalist, national-level 24-hour hackathon (real-time chat backend)"
+  ],
+  "internships": [
+    "Summer intern, backend team at product startup"
+  ],
+  "certifications": [],
+  "preferred_roles": [
+    "Software Engineer",
+    "Backend Engineer"
+  ],
+  "cv_file": "Ananya_Rao.pdf"
+}

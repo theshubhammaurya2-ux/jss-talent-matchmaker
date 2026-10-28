@@ -1,0 +1,86 @@
+{
+  "source_type": "jd",
+  "source_file": "Google_LLC_-_Software_Engineer.pdf",
+  "company": "Google LLC",
+  "role": "Software Engineer (SWE)",
+  "skills": [
+    {
+      "skill_name": "Data Structures and Algorithms",
+      "category_code": "DSA",
+      "evidence": "Strong grasp of data structures and algorithms",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Time and Space Complexity",
+      "category_code": "DSA",
+      "evidence": "reason about time and space complexity",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Programming",
+      "category_code": "COD",
+      "evidence": "turn a problem statement into working, efficient code",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Operating Systems",
+      "category_code": "OS",
+      "evidence": "processes, threads, virtual memory",
+      "confidence": "medium"
+    },
+    {
+      "skill_name": "Networking",
+      "category_code": "NETW",
+      "evidence": "TCP/UDP, HTTP, how a web request travels",
+      "confidence": "medium"
+    },
+    {
+      "skill_name": "Object-Oriented Design",
+      "category_code": "OOD",
+      "evidence": "object-oriented design",
+      "confidence": "medium"
+    },
+    {
+      "skill_name": "Design Patterns",
+      "category_code": "OOD",
+      "evidence": "common design patterns",
+      "confidence": "medium"
+    },
+    {
+      "skill_name": "System Design",
+      "category_code": "SYSD",
+      "evidence": "sketch a URL shortener or file storage service",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Distributed Systems",
+      "category_code": "SYSD",
+      "evidence": "Nice to have: distributed systems in production",
+      "confidence": "low"
+    },
+    {
+      "skill_name": "Software Testing",
+      "category_code": "SWE",
+      "evidence": "testing strategy",
+      "confidence": "medium"
+    },
+    {
+      "skill_name": "Code Review",
+      "category_code": "SWE",
+      "evidence": "code review habits",
+      "confidence": "medium"
+    },
+    {
+      "skill_name": "CI/CD",
+      "category_code": "SWE",
+      "evidence": "basic CI/CD concepts",
+      "confidence": "low"
+    },
+    {
+      "skill_name": "Communication",
+      "category_code": "COMM",
+      "evidence": "explain a technical tradeoff",
+      "confidence": "medium"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "name": "Karthik Subramaniam",
+  "email": "karthik@example.com",
+  "education": "B.Tech CSE, Class of 2026, CGPA 8.2/10",
+  "skills": [
+    {
+      "skill_name": "SQL",
+      "category_code": "SQL",
+      "evidence": "Technical Skills; SQL extraction in churn pipeline",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Schema Design",
+      "category_code": "SQL",
+      "evidence": "Designed a normalized schema for event-management system",
+      "confidence": "medium"
+    },
+    {
+      "skill_name": "Python",
+      "category_code": "COD",
+      "evidence": "Python (pandas, scikit-learn)",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Java",
+      "category_code": "COD",
+      "evidence": "basic Java",
+      "confidence": "low"
+    },
+    {
+      "skill_name": "Statistics",
+      "category_code": "APTI",
+      "evidence": "Technical Skills: Statistics",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "A/B Testing",
+      "category_code": "APTI",
+      "evidence": "Ran and analyzed an A/B test simulation",
+      "confidence": "medium"
+    },
+    {
+      "skill_name": "Machine Learning",
+      "category_code": "AI",
+      "evidence": "Churn-prediction pipeline",
+      "confidence": "medium"
+    },
+    {
+      "skill_name": "Logistic Regression",
+      "category_code": "AI",
+      "evidence": "logistic regression model",
+      "confidence": "medium"
+    },
+    {
+      "skill_name": "Anomaly Detection",
+      "category_code": "AI",
+      "evidence": "anomaly detection on registration spikes",
+      "confidence": "medium"
+    },
+    {
+      "skill_name": "Communication",
+      "category_code": "COMM",
+      "evidence": "presented A/B results to a non-technical audience",
+      "confidence": "medium"
+    },
+    {
+      "skill_name": "Power BI",
+      "category_code": "OTHER",
+      "evidence": "Technical Skills; dashboards for growth team",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Pandas",
+      "category_code": "OTHER",
+      "evidence": "Technical Skills",
+      "confidence": "high"
+    },
+    {
+      "skill_name": "Excel",
+      "category_code": "OTHER",
+      "evidence": "Technical Skills",
+      "confidence": "medium"
+    },
+    {
+      "skill_name": "Dashboards",
+      "category_code": "OTHER",
+      "evidence": "Data Analytics intern built two dashboards",
+      "confidence": "high"
+    }
+  ],
+  "hackathons": [
+    "Runner-up, inter-college data visualization competition"
+  ],
+  "internships": [
+    "Data Analytics intern, fintech startup"
+  ],
+  "certifications": [
+    "Google Data Analytics Certificate"
+  ],
+  "preferred_roles": [
+    "Data Analyst",
+    "Data Scientist"
+  ],
+  "cv_file": "Karthik_Subramaniam.pdf"
+}
